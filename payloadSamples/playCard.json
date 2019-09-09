@@ -1,0 +1,9 @@
+{
+    "playcCard":{
+        "player":"player1",
+        "card":{
+            "suit":"spades",
+            "cardValue":"J"
+        }
+    }
+}

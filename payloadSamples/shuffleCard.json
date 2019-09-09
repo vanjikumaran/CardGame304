@@ -1,0 +1,18 @@
+{
+    "shuffleCard":{
+        "cards":[{"card":{
+                "suit":"spades",
+                "cardValue":"J"
+            }},{"card":{
+                "suit":"spades",
+                "cardValue":"10"
+            }},{"card":{
+                "suit":"diamonds",
+                "cardValue":"K"
+            }},{"card":{
+                "suit":"clubs",
+                "cardValue":"Q"
+            }}
+        ]
+    }
+}
