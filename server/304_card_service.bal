@@ -1,76 +1,71 @@
+// 304 Game Server written based out of REST API and WebSub for Plahyer Notifications
+import ballerina/http;
 import ballerina/log;
 import ballerina/websub;
-import ballerina/math;
-
-
 
 listener http:Listener httpListener = new(9090);
 
-// The topic against which the publisher will publish updates, and the subscribers
-// need to subscribe to, to receive notifications when an order is placed
-final string ORDER_TOPIC = "http://localhost:9090/game/";
+//Notification topic
+final string GAME_TOPIC = "http://localhost:9090/304/game/notifications";
 
-// An in-memory `map` to which orders will be added for demonstration
-map<json> orderMap = {};
+// Player Map
+map<json> gameMap = {};
 
-
-
-
-function cardShuffling(int n) {
-   
-    for (int i = 0; i < n; i++) 
-        { 
-            int r = i + rand.nextInt(n - i); 
-            
-            
-            int temp = card[r]; 
-            card[r] = card[i]; 
-            card[i] = temp; 
-        } 
-}
-
-
-
+//Hub
 websub:WebSubHub webSubHub = startHubAndRegisterTopic();
 
+
+// REST API for Notification WebSub Discovery and Game Play
 @http:ServiceConfig {
     basePath: "/game"
 }
-service cardgame304 on httpListener {
+service game on httpListener {
 
+    // Discovery Service for the 304 Card Game WebSub
+    @http:ResourceConfig {
+        methods: ["GET", "HEAD"],
+        path: "/notification"
+    }
+    resource function discoverGameNotificaiton(http:Caller caller, http:Request req) {
+        http:Response response = new;
+        websub:addWebSubLinkHeader(response, [webSubHub.hubUrl], GAME_TOPIC);
+        response.statusCode = 202;
+        var result = caller->respond(response);
+        if (result is error) {
+           log:printError("Error responding on Joining the Game", err = result);
+        }
+    }
 
-    // Placing a bet for Game
+    // Resource accepting Gamer Joining.
     @http:ResourceConfig {
         methods: ["POST"],
-        path: "/bet"
+        path: "/join"
     }
-    resource function placeBet(http:Caller caller, http:Request req) {
+    resource function playerJoinGame(http:Caller caller, http:Request req) {
+        var playerJoinReq = req.getJsonPayload();
+        if (playerJoinReq is json) {
+            string playerId = playerJoinReq.player.ID.toString();
+            gameMap[playerId] = playerJoinReq;
 
-        var betReq = req.getJsonPayload();
-        
-        if (betReq is json) {
-            string  = orderReq.Order.ID.toString();
-            orderMap[orderId] = orderReq;
-
-            // Create the response message indicating successful order creation.
+            // Create the response message indicating successful player creation.
             http:Response response = new;
             response.statusCode = 202;
             var result = caller->respond(response);
             if (result is error) {
-               log:printError("Error responding on ordering", err = result);
+               log:printError("Error responding on game Joining", err = result);
             }
 
             // Publish the update to the Hub, to notify subscribers.
-            string orderCreatedNotification = "New Order Added: " + orderId;
-            log:printInfo(orderCreatedNotification);
-            result = webSubHub.publishUpdate(ORDER_TOPIC,
-                                                    orderCreatedNotification);
+            string gamePlayerCreatedNotification = "New Game Player Added: " + playerId;
+            log:printInfo(gamePlayerCreatedNotification);
+            result = webSubHub.publishUpdate(GAME_TOPIC,
+                                                    gamePlayerCreatedNotification);
             if (result is error) {
                 log:printError("Error publishing update", err = result);
             }
         } else {
-            log:printError("Error retrieving payload", err = betReq);
-            panic betReq;
+            log:printError("Error retrieving payload", err = playerJoinReq);
+            panic playerJoinReq;
         }
     }
 
@@ -83,7 +78,7 @@ function startHubAndRegisterTopic() returns websub:WebSubHub {
     websub:WebSubHub internalHub = hubStartUpResult is websub:HubStartedUpError
                     ? hubStartUpResult.startedUpHub : hubStartUpResult;
 
-    var result = internalHub.registerTopic(ORDER_TOPIC);
+    var result = internalHub.registerTopic(GAME_TOPIC);
     if (result is error) {
         log:printError("Error registering topic", err = result);
     }
