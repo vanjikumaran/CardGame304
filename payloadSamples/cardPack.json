@@ -2,259 +2,259 @@
     "cardpack": {
         "cards": [
             {
-                "Card": {
+                "card": {
                     "ID": "1",
-                    "Suit": "Spades",
-                    "CardValue": "J",
-                    "Value": 30
+                    "suit": "Spades",
+                    "cardvalue": "J",
+                    "value": 30
                 }
             },
             {
-                "Card": {
+                "card": {
                     "ID": "2",
-                    "Suit": "Spades",
-                    "CardValue": "9",
-                    "Value": 20
+                    "suit": "Spades",
+                    "cardvalue": "9",
+                    "value": 20
                 }
             },
             {
-                "Card": {
+                "card": {
                     "ID": "3",
-                    "Suit": "Spades",
-                    "CardValue": "A",
-                    "Value": 11
+                    "suit": "Spades",
+                    "cardvalue": "A",
+                    "value": 11
                 }
             },
             {
-                "Card": {
+                "card": {
                     "ID": "4",
-                    "Suit": "Spades",
-                    "CardValue": "10",
-                    "Value": 10
+                    "suit": "Spades",
+                    "cardvalue": "10",
+                    "value": 10
                 }
             },
             {
-                "Card": {
+                "card": {
                     "ID": "5",
-                    "Suit": "Spades",
-                    "CardValue": "K",
-                    "Value": 3
+                    "suit": "Spades",
+                    "cardvalue": "K",
+                    "value": 3
                 }
             },
             {
-                "Card": {
+                "card": {
                     "ID": "6",
-                    "Suit": "Spades",
-                    "CardValue": "Q",
-                    "Value": 2
+                    "suit": "Spades",
+                    "cardvalue": "Q",
+                    "value": 2
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Spades",
-                    "CardValue": "7",
-                    "Value": 0
+                "card": {
+                    "ID": "7",
+                    "suit": "Spades",
+                    "cardvalue": "7",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Spades",
-                    "CardValue": "8",
-                    "Value": 0
+                "card": {
+                    "ID": "8",
+                    "suit": "Spades",
+                    "cardvalue": "8",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "1",
-                    "Suit": "Diamonds",
-                    "CardValue": "J",
-                    "Value": 30
+                "card": {
+                    "ID": "9",
+                    "suit": "Diamonds",
+                    "cardvalue": "J",
+                    "value": 30
                 }
             },
             {
-                "Card": {
-                    "ID": "2",
-                    "Suit": "Diamonds",
-                    "CardValue": "9",
-                    "Value": 20
+                "card": {
+                    "ID": "10",
+                    "suit": "Diamonds",
+                    "cardvalue": "9",
+                    "value": 20
                 }
             },
             {
-                "Card": {
-                    "ID": "3",
-                    "Suit": "Diamonds",
-                    "CardValue": "A",
-                    "Value": 11
+                "card": {
+                    "ID": "11",
+                    "suit": "Diamonds",
+                    "cardvalue": "A",
+                    "value": 11
                 }
             },
             {
-                "Card": {
-                    "ID": "4",
-                    "Suit": "Diamonds",
-                    "CardValue": "10",
-                    "Value": 10
+                "card": {
+                    "ID": "12",
+                    "suit": "Diamonds",
+                    "cardvalue": "10",
+                    "value": 10
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Diamonds",
-                    "CardValue": "K",
-                    "Value": 3
+                "card": {
+                    "ID": "13",
+                    "suit": "Diamonds",
+                    "cardvalue": "K",
+                    "value": 3
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Diamonds",
-                    "CardValue": "Q",
-                    "Value": 2
+                "card": {
+                    "ID": "14",
+                    "suit": "Diamonds",
+                    "cardvalue": "Q",
+                    "value": 2
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Diamonds",
-                    "CardValue": "7",
-                    "Value": 0
+                "card": {
+                    "ID": "15",
+                    "suit": "Diamonds",
+                    "cardvalue": "7",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Diamonds",
-                    "CardValue": "8",
-                    "Value": 0
+                "card": {
+                    "ID": "16",
+                    "suit": "Diamonds",
+                    "cardvalue": "8",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "1",
-                    "Suit": "Clubs",
-                    "CardValue": "J",
-                    "Value": 30
+                "card": {
+                    "ID": "17",
+                    "suit": "Clubs",
+                    "cardvalue": "J",
+                    "value": 30
                 }
             },
             {
-                "Card": {
-                    "ID": "2",
-                    "Suit": "Clubs",
-                    "CardValue": "9",
-                    "Value": 20
+                "card": {
+                    "ID": "18",
+                    "suit": "Clubs",
+                    "cardvalue": "9",
+                    "value": 20
                 }
             },
             {
-                "Card": {
-                    "ID": "3",
-                    "Suit": "Clubs",
-                    "CardValue": "A",
-                    "Value": 11
+                "card": {
+                    "ID": "19",
+                    "suit": "Clubs",
+                    "cardvalue": "A",
+                    "value": 11
                 }
             },
             {
-                "Card": {
-                    "ID": "4",
-                    "Suit": "Clubs",
-                    "CardValue": "10",
-                    "Value": 10
+                "card": {
+                    "ID": "20",
+                    "suit": "Clubs",
+                    "cardvalue": "10",
+                    "value": 10
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Clubs",
-                    "CardValue": "K",
-                    "Value": 3
+                "card": {
+                    "ID": "21",
+                    "suit": "Clubs",
+                    "cardvalue": "K",
+                    "value": 3
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Clubs",
-                    "CardValue": "Q",
-                    "Value": 2
+                "card": {
+                    "ID": "22",
+                    "suit": "Clubs",
+                    "cardvalue": "Q",
+                    "value": 2
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Clubs",
-                    "CardValue": "7",
-                    "Value": 0
+                "card": {
+                    "ID": "23",
+                    "suit": "Clubs",
+                    "cardvalue": "7",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Clubs",
-                    "CardValue": "8",
-                    "Value": 0
+                "card": {
+                    "ID": "24",
+                    "suit": "Clubs",
+                    "cardvalue": "8",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "1",
-                    "Suit": "Hearts",
-                    "CardValue": "J",
-                    "Value": 30
+                "card": {
+                    "ID": "25",
+                    "suit": "Hearts",
+                    "cardvalue": "J",
+                    "value": 30
                 }
             },
             {
-                "Card": {
-                    "ID": "2",
-                    "Suit": "Hearts",
-                    "CardValue": "9",
-                    "Value": 20
+                "card": {
+                    "ID": "26",
+                    "suit": "Hearts",
+                    "cardvalue": "9",
+                    "value": 20
                 }
             },
             {
-                "Card": {
-                    "ID": "3",
-                    "Suit": "Hearts",
-                    "CardValue": "A",
-                    "Value": 11
+                "card": {
+                    "ID": "27",
+                    "suit": "Hearts",
+                    "cardvalue": "A",
+                    "value": 11
                 }
             },
             {
-                "Card": {
-                    "ID": "4",
-                    "Suit": "Hearts",
-                    "CardValue": "10",
-                    "Value": 10
+                "card": {
+                    "ID": "28",
+                    "suit": "Hearts",
+                    "cardvalue": "10",
+                    "value": 10
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Hearts",
-                    "CardValue": "K",
-                    "Value": 3
+                "card": {
+                    "ID": "29",
+                    "suit": "Hearts",
+                    "cardvalue": "K",
+                    "value": 3
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Hearts",
-                    "CardValue": "Q",
-                    "Value": 2
+                "card": {
+                    "ID": "30",
+                    "suit": "Hearts",
+                    "cardvalue": "Q",
+                    "value": 2
                 }
             },
             {
-                "Card": {
-                    "ID": "5",
-                    "Suit": "Hearts",
-                    "CardValue": "7",
-                    "Value": 0
+                "card": {
+                    "ID": "31",
+                    "suit": "Hearts",
+                    "cardvalue": "7",
+                    "value": 0
                 }
             },
             {
-                "Card": {
-                    "ID": "6",
-                    "Suit": "Hearts",
-                    "CardValue": "8",
-                    "Value": 0
+                "card": {
+                    "ID": "32",
+                    "suit": "Hearts",
+                    "cardvalue": "8",
+                    "value": 0
                 }
             }
         ]

@@ -1,6 +1,7 @@
 // 304 Game Server written based out of REST API and WebSub for Plahyer Notifications
 import ballerina/http;
 import ballerina/log;
+import ballerina/io;
 import ballerina/websub;
 
 listener http:Listener httpListener = new(9090);
@@ -10,6 +11,11 @@ final string GAME_TOPIC = "http://localhost:9090/304/game/notifications";
 
 // Player Map
 map<json> gameMap = {};
+
+map<json> cardsMap = {};
+
+
+
 
 //Hub
 websub:WebSubHub webSubHub = startHubAndRegisterTopic();
@@ -69,8 +75,60 @@ service game on httpListener {
         }
     }
 
-}
+    @http:ResourceConfig {
+        methods: ["POST"],
+        path: "/give4cards"
+    }
+    resource function giveFourCards(http:Caller caller, http:Request req) {
+        var playerCardReq = req.getJsonPayload();
+        if (playerCardReq is json) {
+            string playerId = playerCardReq.player.ID.toString();
+        }
+    }
 
+// Resource accepting Gamer Joining.
+    @http:ResourceConfig {
+        methods: ["POST"],
+        path: "/card/load"
+    }
+    resource function loadCardsIntoGame(http:Caller caller, http:Request req) {
+        var cardPackReq = req.getJsonPayload();
+        if (cardPackReq is json) {
+            //Write Logic to load the cardPack into Map cardsMap
+            json[] cards = <json[]>cardPackReq.cardpack.cards;
+            foreach json cardJson in cards {
+                string cardId = cardJson.card.ID.toString();
+                cardsMap[cardId] = cardJson;
+            }
+            foreach var item in cardsMap {
+                io:println("card ",item);
+            }
+
+
+
+            // Create the response message indicating successful card load.
+            http:Response response = new;
+            response.statusCode = 201;
+            var result = caller->respond(response);
+            if (result is error) {
+               log:printError("Error responding on game Joining", err = result);
+            }
+
+            // Publish the update to the Hub, to notify subscribers.
+            string cardPackLoadNotification = "Card Pack Has been Loaded";
+            log:printInfo(cardPackLoadNotification);
+            result = webSubHub.publishUpdate(GAME_TOPIC,
+                                                    cardPackLoadNotification);
+            if (result is error) {
+                log:printError("Error publishing update", err = result);
+            }
+        } else {
+            log:printError("Error loading the card pack into system", err = cardPackReq);
+            panic cardPackReq;
+        }
+    }
+    
+}
 // Start up a Ballerina WebSub Hub on port 9191 and register the topic against
 // which updates will be published.
 function startHubAndRegisterTopic() returns websub:WebSubHub {
