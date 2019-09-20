@@ -4,7 +4,7 @@
             {
                 "card": {
                     "ID": "1",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "J",
                     "value": 30
                 }
@@ -12,7 +12,7 @@
             {
                 "card": {
                     "ID": "2",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "9",
                     "value": 20
                 }
@@ -20,7 +20,7 @@
             {
                 "card": {
                     "ID": "3",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "A",
                     "value": 11
                 }
@@ -28,7 +28,7 @@
             {
                 "card": {
                     "ID": "4",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "10",
                     "value": 10
                 }
@@ -36,7 +36,7 @@
             {
                 "card": {
                     "ID": "5",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "K",
                     "value": 3
                 }
@@ -44,7 +44,7 @@
             {
                 "card": {
                     "ID": "6",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "Q",
                     "value": 2
                 }
@@ -52,7 +52,7 @@
             {
                 "card": {
                     "ID": "7",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "7",
                     "value": 0
                 }
@@ -60,7 +60,7 @@
             {
                 "card": {
                     "ID": "8",
-                    "suit": "Spades",
+                    "suit": "spades",
                     "cardvalue": "8",
                     "value": 0
                 }
@@ -68,7 +68,7 @@
             {
                 "card": {
                     "ID": "9",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "J",
                     "value": 30
                 }
@@ -76,7 +76,7 @@
             {
                 "card": {
                     "ID": "10",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "9",
                     "value": 20
                 }
@@ -84,7 +84,7 @@
             {
                 "card": {
                     "ID": "11",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "A",
                     "value": 11
                 }
@@ -92,7 +92,7 @@
             {
                 "card": {
                     "ID": "12",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "10",
                     "value": 10
                 }
@@ -100,7 +100,7 @@
             {
                 "card": {
                     "ID": "13",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "K",
                     "value": 3
                 }
@@ -108,7 +108,7 @@
             {
                 "card": {
                     "ID": "14",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "Q",
                     "value": 2
                 }
@@ -116,7 +116,7 @@
             {
                 "card": {
                     "ID": "15",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "7",
                     "value": 0
                 }
@@ -124,7 +124,7 @@
             {
                 "card": {
                     "ID": "16",
-                    "suit": "Diamonds",
+                    "suit": "diamonds",
                     "cardvalue": "8",
                     "value": 0
                 }
@@ -132,7 +132,7 @@
             {
                 "card": {
                     "ID": "17",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "J",
                     "value": 30
                 }
@@ -140,7 +140,7 @@
             {
                 "card": {
                     "ID": "18",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "9",
                     "value": 20
                 }
@@ -148,7 +148,7 @@
             {
                 "card": {
                     "ID": "19",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "A",
                     "value": 11
                 }
@@ -156,7 +156,7 @@
             {
                 "card": {
                     "ID": "20",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "10",
                     "value": 10
                 }
@@ -164,7 +164,7 @@
             {
                 "card": {
                     "ID": "21",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "K",
                     "value": 3
                 }
@@ -172,7 +172,7 @@
             {
                 "card": {
                     "ID": "22",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "Q",
                     "value": 2
                 }
@@ -180,7 +180,7 @@
             {
                 "card": {
                     "ID": "23",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "7",
                     "value": 0
                 }
@@ -188,7 +188,7 @@
             {
                 "card": {
                     "ID": "24",
-                    "suit": "Clubs",
+                    "suit": "clubs",
                     "cardvalue": "8",
                     "value": 0
                 }
@@ -196,7 +196,7 @@
             {
                 "card": {
                     "ID": "25",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "J",
                     "value": 30
                 }
@@ -204,7 +204,7 @@
             {
                 "card": {
                     "ID": "26",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "9",
                     "value": 20
                 }
@@ -212,7 +212,7 @@
             {
                 "card": {
                     "ID": "27",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "A",
                     "value": 11
                 }
@@ -220,7 +220,7 @@
             {
                 "card": {
                     "ID": "28",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "10",
                     "value": 10
                 }
@@ -228,7 +228,7 @@
             {
                 "card": {
                     "ID": "29",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "K",
                     "value": 3
                 }
@@ -236,7 +236,7 @@
             {
                 "card": {
                     "ID": "30",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "Q",
                     "value": 2
                 }
@@ -244,7 +244,7 @@
             {
                 "card": {
                     "ID": "31",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "7",
                     "value": 0
                 }
@@ -252,7 +252,7 @@
             {
                 "card": {
                     "ID": "32",
-                    "suit": "Hearts",
+                    "suit": "hearts",
                     "cardvalue": "8",
                     "value": 0
                 }

@@ -1,5 +1,11 @@
 {
     "trumpCard":{
-        ""
+        "player":"vanjikumaran",
+        "card": {
+            "ID": "1",
+            "suit": "spades",
+            "cardvalue": "J",
+            "value": 30
+        }
     }
 }

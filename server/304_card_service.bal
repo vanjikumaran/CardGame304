@@ -3,6 +3,64 @@ import ballerina/http;
 import ballerina/log;
 import ballerina/io;
 import ballerina/websub;
+import ballerina/privacy;
+
+
+type GamePlay object {
+    private string gameplayname;
+    private Card trumpCard;
+    private Team[] teams;
+
+    function __init(string gameplayname) {
+        self.gameplayname=gameplayname;
+    }
+    function addNewTeam(Team team) {
+        self.teams[self.teams.length()] = team; 
+    }
+    function removeTeam(Team team) {
+        int counter = 0;
+        foreach Team item in teams {
+            if (teams[counter].) {
+                
+            }
+        }
+        
+    }
+};
+
+type Team object {
+    private string teamName;
+    private Player[] players;
+    
+};
+
+type Player object {
+    private string playerName;
+    private Card[] cards;
+    
+    function __init(string playerName) {
+        self.playerName=playerName;
+    }
+    
+};
+
+type Card object {
+    private int ID;
+    private string suit;
+    private string cardvalue;
+    private int value;
+    
+    function __init(int ID, string suit, string cardvalue, int value) returns error? {
+        self.ID = ID;
+        self.suit = suit;
+        self.cardvalue =cardvalue;
+        self.value = value;
+    }
+};
+
+
+
+
 
 listener http:Listener httpListener = new(9090);
 
@@ -103,8 +161,6 @@ service game on httpListener {
             foreach var item in cardsMap {
                 io:println("card ",item);
             }
-
-
 
             // Create the response message indicating successful card load.
             http:Response response = new;
